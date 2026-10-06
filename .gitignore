@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Ignore my large csv files
+csv-files/
+
 # C extensions
 *.so
 
