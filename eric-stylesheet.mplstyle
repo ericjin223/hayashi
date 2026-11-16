@@ -1,36 +1,44 @@
-# Seaborn common parameters
-# .15 = dark_gray
-# .8 = light_gray
-legend.frameon: False
-legend.numpoints: 1
-legend.scatterpoints: 1
-xtick.direction: out
-ytick.direction: out
-axes.axisbelow: True
-font.family: sans-serif
-grid.linestyle: -
-lines.solid_capstyle: round
+sns.set_palette(palette)
 
-# Seaborn darkgrid parameters
-axes.grid: True
-axes.edgecolor: white
-axes.linewidth: 0
-xtick.major.size: 0
-ytick.major.size: 0
-xtick.minor.size: 0
-ytick.minor.size: 0
+# Typography & Text
+font.family: "sans-serif",
+font.sans-serif: ["Helvetica", "Arial", "DejaVu Sans"],
+font.size: 12.0,
+axes.labelsize: 14.0,
+axes.titlesize: 14.0,
+xtick.labelsize: 11.0,
+ytick.labelsize: 11.0,
+legend.fontsize: 11.0,
 
-# from mplcyberpunk
-text.color: 0.9
-axes.labelcolor: 0.9
-xtick.color: 0.9
-ytick.color: 0.9
-grid.color: 2A3459
+# Axes Spines & Structure
+axes.spines.top: False,
+axes.spines.right: False,
+axes.spines.left: True,
+axes.spines.bottom: True,
+axes.linewidth: 0.8,
+axes.facecolor: "white",
+axes.grid: False,
 
-# Custom
-font.sans-serif: Overpass, Helvetica, Helvetica Neue, Arial, Liberation Sans, DejaVu Sans, Bitstream Vera Sans, sans-serif
-axes.prop_cycle: cycler('color', ['18c0c4', 'f62196', 'A267F5', 'f3907e', 'ffe46b', 'fefeff'])
-image.cmap: RdPu
-figure.facecolor: 212946
-axes.facecolor: 212946
-savefig.facecolor: 212946
+# Ticks
+xtick.direction: "out",
+ytick.direction: "out",
+xtick.major.size: 4.0,
+ytick.major.size: 4.0,
+xtick.major.width: 0.8,
+ytick.major.width: 0.8,
+
+# Lines & Plots
+lines.linewidth: 1.5,
+lines.markeredgewidth: 0.8,
+markers.fillstyle: "full",
+
+# Legend Layout
+legend.frameon: False,
+legend.loc: "upper right",
+
+# Figure Size & Export Defaults
+figure.figsize: [4.5, 3.5],
+figure.dpi: 120,
+savefig.dpi: 300,
+savefig.bbox: "tight",
+savefig.transparent: False
